@@ -1,0 +1,25 @@
+{
+  "name": "countries_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3run3r/countries_lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3run3r/countries_lab/issues"
+  },
+  "homepage": "https://github.com/3run3r/countries_lab#readme",
+  "dependencies": {
+    "vue": "^2.6.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
