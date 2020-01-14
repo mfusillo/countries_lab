@@ -9,13 +9,23 @@
   <body>
     <div id="app">
 
-      <select>
+      <select v-model="selectedCountry.name">
+        <option v-for="country in countries">
+          {{ country.name }}
+        </option>
+      </select>
+      <p>{{ selectedCountry.name }}</p>
+      <img v-for="country in countries" v-if="selectedCountry.name === country.name" :src="country.flag">
+
+      <select v-model="selectedCountry.name" v-on:change="addFavouriteCountry(selectedCountry)">
         <option v-for="country in countries">
           {{ country.name }}
         </option>
       </select>
 
-      <img v-for="country in countries" :src="country.flag">
+      <ul>
+        <li v-for="favouriteCountry in favouriteCountries">{{ favouriteCountry.name }}</li>
+      </ul>
 
     </div>
   </body>
