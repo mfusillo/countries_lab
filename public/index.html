@@ -9,7 +9,14 @@
   <body>
     <div id="app">
 
-      
+      <select>
+        <option v-for="country in countries">
+          {{ country.name }}
+        </option>
+      </select>
+
+      <img v-for="country in countries" :src="country.flag">
+
     </div>
   </body>
 </html>
